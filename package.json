@@ -1,0 +1,33 @@
+{
+  "name": "nbp-adapter-google-natural-language",
+  "version": "0.0.1",
+  "description": "Google Natural Language adapter for Node.js Bot Platform",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel ./src/index.js --preset babel-preset-es2015 --out-file ./dist/index.js",
+    "precommit": "npm run build",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evilai/nbp-adapter-google-natural-language.git"
+  },
+  "author": "Maxim Vetrenko <vetrenko.maxim@gmail.com> (https://github.com/maxmert)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evilai/nbp-adapter-google-natural-language/issues"
+  },
+  "homepage": "https://github.com/evilai/nbp-adapter-google-natural-language#readme",
+  "dependencies": {
+    "google-cloud": "^0.43.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint-config-evilai": "^0.0.1",
+    "pre-commit": "^1.1.3"
+  }
+}
