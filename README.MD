@@ -1,4 +1,4 @@
-# Google Natural Language adapter
+## Google Natural Language adapter
 This is a Google Natural Language adapter for Node.js Bot Platform. You need to provide:
 
 * `projectId` is a google project ID;
@@ -24,3 +24,8 @@ googleNaturalLanguage.detectSentiment('Here your sentence where you can detect s
 ```
 
 Please, look at [usage example](https://github.com/evilai/nodejs-bot-platform/blob/master/src/bot/skills/clusters/core/google-language.js). 
+
+## Tunneling
+Check `tunneling.js`. To bind context of all client's function we need to perform tunneling on each request, so inside skills you can do `googleLanguage.annotate('Some text)` without specifying application tokens.
+
+Look at [router-builder.js](https://github.com/evilai/nodejs-bot-platform/blob/master/src/bot/platforms/messenger/bot-name/router-builder.js) as an example.

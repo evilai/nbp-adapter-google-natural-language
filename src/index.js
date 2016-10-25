@@ -2,6 +2,8 @@ import gcloud from 'google-cloud';
 
 const createFakeLogger = () => ({ error: () => null });
 
+export { default as googleLanguageTunneling } from './tunneling';
+
 export default function({ projectId, keyFilename, logger = createFakeLogger() }) {
 
     const language = gcloud.language({

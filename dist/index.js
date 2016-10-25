@@ -3,6 +3,16 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.googleLanguageTunneling = undefined;
+
+var _tunneling = require('./tunneling');
+
+Object.defineProperty(exports, 'googleLanguageTunneling', {
+    enumerable: true,
+    get: function get() {
+        return _interopRequireDefault(_tunneling).default;
+    }
+});
 
 exports.default = function (_ref) {
     var projectId = _ref.projectId;
