@@ -3,6 +3,7 @@ import gcloud from 'google-cloud';
 const createFakeLogger = () => ({ error: () => null });
 
 export { default as googleLanguageTunneling } from './tunneling';
+export * from './selectors';
 
 export default function({ projectId, keyFilename, logger = createFakeLogger() }) {
 

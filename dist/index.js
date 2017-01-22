@@ -14,6 +14,18 @@ Object.defineProperty(exports, 'googleLanguageTunneling', {
     }
 });
 
+var _selectors = require('./selectors');
+
+Object.keys(_selectors).forEach(function (key) {
+    if (key === "default" || key === "__esModule") return;
+    Object.defineProperty(exports, key, {
+        enumerable: true,
+        get: function get() {
+            return _selectors[key];
+        }
+    });
+});
+
 exports.default = function (_ref) {
     var projectId = _ref.projectId;
     var keyFilename = _ref.keyFilename;
