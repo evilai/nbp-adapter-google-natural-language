@@ -1,4 +1,4 @@
-import gcloud from 'google-cloud';
+import createLanguage from '@google-cloud/language';
 
 const createFakeLogger = () => ({ error: () => null });
 
@@ -7,7 +7,7 @@ export * from './selectors';
 
 export default function({ projectId, keyFilename, logger = createFakeLogger() }) {
 
-    const language = gcloud.language({
+    const language = createLanguage({
         projectId,
         keyFilename
     });

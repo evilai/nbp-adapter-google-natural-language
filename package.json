@@ -1,6 +1,6 @@
 {
   "name": "nbp-adapter-google-natural-language",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Google Natural Language adapter for Node.js Bot Platform",
   "main": "dist/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/evilai/nbp-adapter-google-natural-language#readme",
   "dependencies": {
-    "google-cloud": "^0.43.0"
+    "@google-cloud/language": "^0.7.1"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",

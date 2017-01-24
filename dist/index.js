@@ -27,13 +27,13 @@ Object.keys(_selectors).forEach(function (key) {
 });
 
 exports.default = function (_ref) {
-    var projectId = _ref.projectId;
-    var keyFilename = _ref.keyFilename;
-    var _ref$logger = _ref.logger;
-    var logger = _ref$logger === undefined ? createFakeLogger() : _ref$logger;
+    var projectId = _ref.projectId,
+        keyFilename = _ref.keyFilename,
+        _ref$logger = _ref.logger,
+        logger = _ref$logger === undefined ? createFakeLogger() : _ref$logger;
 
 
-    var language = _googleCloud2.default.language({
+    var language = (0, _language2.default)({
         projectId: projectId,
         keyFilename: keyFilename
     });
@@ -84,9 +84,9 @@ exports.default = function (_ref) {
     };
 };
 
-var _googleCloud = require('google-cloud');
+var _language = require('@google-cloud/language');
 
-var _googleCloud2 = _interopRequireDefault(_googleCloud);
+var _language2 = _interopRequireDefault(_language);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
